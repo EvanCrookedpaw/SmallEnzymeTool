@@ -1,0 +1,14 @@
+def convert_to_enzyme_name(text):
+    # split the text into a list of words
+    words = text.split()
+    
+    # convert each word to enzyme name format
+    for i in range(len(words)):
+        word = words[i]
+        words[i] = word.capitalize() + "ase"
+    
+    # join the words back into a string
+    enzyme_name = " ".join(words)
+    
+    return enzyme_name
+
